@@ -81,6 +81,9 @@
     <ClCompile Include="Engine\Graphics\VertexIndexArray.cpp">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Graphics\Model.cpp">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Core\Assert.h">
@@ -137,12 +140,27 @@
     <ClInclude Include="Engine\Graphics\VertexIndexArray.h">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\Graphics\Model.h">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Build\Shaders\basic.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="Build\Shaders\basic.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Build\Shaders\gouraud.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Build\Shaders\gouraud.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Build\Shaders\phong.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Build\Shaders\phong.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
   </ItemGroup>

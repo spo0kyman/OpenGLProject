@@ -16,6 +16,9 @@ namespace nc {
 
 	bool Texture::CreateTexture(const std::string& filename, GLenum target, GLuint unit)
 	{
+		m_target = target;
+		m_unit = unit;
+
 		SDL_Surface* surface = IMG_Load(filename.c_str());
 		if (surface == nullptr) {
 			SDL_Log("Failed to create surface: %s", SDL_GetError());

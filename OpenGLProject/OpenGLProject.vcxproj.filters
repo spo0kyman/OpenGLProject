@@ -34,6 +34,9 @@
     <Filter Include="Source Files\Engine\Math">
       <UniqueIdentifier>{6ae8af1a-7d2c-440e-b642-b2b44726a064}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Engine\Objects">
+      <UniqueIdentifier>{faf3eed3-0969-4cde-8310-2d2dbc577f6c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -53,9 +56,6 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine\Input\InputSystem.cpp">
-      <Filter>Source Files\Engine\Input</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Resources\ResourceManager.cpp">
       <Filter>Source Files\Engine\Resources</Filter>
@@ -84,6 +84,27 @@
     <ClCompile Include="Engine\Graphics\Model.cpp">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Math\Transform.cpp">
+      <Filter>Source Files\Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Material.cpp">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Objects\Object.cpp">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Objects\Scene.cpp">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Objects\Light.cpp">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Objects\Camera.cpp">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Input\InputSystem.cpp">
+      <Filter>Source Files\Engine\Input</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Core\Assert.h">
@@ -106,9 +127,6 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine\Input\InputSystem.h">
-      <Filter>Source Files\Engine\Input</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Resources\Resource.h">
       <Filter>Source Files\Engine\Resources</Filter>
@@ -142,6 +160,27 @@
     </ClInclude>
     <ClInclude Include="Engine\Graphics\Model.h">
       <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Math\Transform.h">
+      <Filter>Source Files\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Material.h">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Objects\Object.h">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Objects\Scene.h">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Objects\Camera.h">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Objects\Light.h">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input\InputSystem.h">
+      <Filter>Source Files\Engine\Input</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

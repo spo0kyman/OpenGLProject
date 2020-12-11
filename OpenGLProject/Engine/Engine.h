@@ -11,6 +11,15 @@
 #include "Graphics/Program.h"
 #include "Graphics/Renderer.h"
 #include "Graphics/Texture.h"
+#include "Graphics/VertexArray.h"
+#include "Graphics/VertexIndexArray.h"
+#include "Graphics/Model.h"
+#include "Graphics/Material.h"
+
+#include "Objects/Object.h"
+#include "Objects/Scene.h"
+#include "Objects/Light.h"
+#include "Objects/Camera.h"
 
 #include "Resources/ResourceManager.h"
 #include "Input/InputSystem.h"

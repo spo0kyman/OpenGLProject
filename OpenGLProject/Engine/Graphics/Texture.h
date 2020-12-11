@@ -7,6 +7,7 @@ namespace nc {
 		bool Create(const std::string& name, void* renderer) override;
 		void Destroy() override;
 
+		void Bind() { glBindTexture(m_target, m_texture); }
 		bool CreateTexture(const std::string& filename, GLenum target = GL_TEXTURE_2D, GLuint unit = GL_TEXTURE0);
 
 	protected:

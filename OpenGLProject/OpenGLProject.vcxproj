@@ -163,6 +163,7 @@
     <ClCompile Include="Engine\Core\File.cpp" />
     <ClCompile Include="Engine\Core\Timer.cpp" />
     <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Engine\Graphics\Material.cpp" />
     <ClCompile Include="Engine\Graphics\Model.cpp" />
     <ClCompile Include="Engine\Graphics\Program.cpp" />
     <ClCompile Include="Engine\Graphics\Renderer.cpp" />
@@ -170,6 +171,11 @@
     <ClCompile Include="Engine\Graphics\VertexArray.cpp" />
     <ClCompile Include="Engine\Graphics\VertexIndexArray.cpp" />
     <ClCompile Include="Engine\Input\InputSystem.cpp" />
+    <ClCompile Include="Engine\Math\Transform.cpp" />
+    <ClCompile Include="Engine\Objects\Camera.cpp" />
+    <ClCompile Include="Engine\Objects\Light.cpp" />
+    <ClCompile Include="Engine\Objects\Object.cpp" />
+    <ClCompile Include="Engine\Objects\Scene.cpp" />
     <ClCompile Include="Engine\Resources\ResourceManager.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">
@@ -194,6 +200,7 @@
     <ClInclude Include="Engine\Core\System.h" />
     <ClInclude Include="Engine\Core\Timer.h" />
     <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\Graphics\Material.h" />
     <ClInclude Include="Engine\Graphics\Model.h" />
     <ClInclude Include="Engine\Graphics\Program.h" />
     <ClInclude Include="Engine\Graphics\Renderer.h" />
@@ -202,6 +209,11 @@
     <ClInclude Include="Engine\Graphics\VertexIndexArray.h" />
     <ClInclude Include="Engine\Input\InputSystem.h" />
     <ClInclude Include="Engine\Math\Math.h" />
+    <ClInclude Include="Engine\Math\Transform.h" />
+    <ClInclude Include="Engine\Objects\Camera.h" />
+    <ClInclude Include="Engine\Objects\Light.h" />
+    <ClInclude Include="Engine\Objects\Object.h" />
+    <ClInclude Include="Engine\Objects\Scene.h" />
     <ClInclude Include="Engine\Resources\Resource.h" />
     <ClInclude Include="Engine\Resources\ResourceManager.h" />
     <ClInclude Include="pch.h" />

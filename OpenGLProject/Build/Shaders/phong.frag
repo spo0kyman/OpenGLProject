@@ -2,6 +2,7 @@
 
 in vec3 fs_position;
 in vec3 fs_normal;
+in vec2 fs_texcoord;
 
 out vec4 out_color;
 
@@ -23,10 +24,11 @@ struct Light{
 
 uniform Light light;
 
+uniform sampler2D texture_sample;
+
 void main()
 {
-  vec3 ambient = material.ambient * light.ambient;
-
+	vec3 ambient = material.ambient * light.ambient;
 
 	vec3 direction_to_light = normalize(vec3(light.position) - fs_position);
 
@@ -43,5 +45,5 @@ void main()
 		specular = material.specular * light.specular * intensity;
 	}
 
-	out_color = vec4(ambient + diffuse + specular, 1);
+	out_color = vec4(ambient + diffuse, 1) * texture(texture_sample, fs_texcoord) + vec4(specular, 1);
 }

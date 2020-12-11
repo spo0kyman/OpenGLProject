@@ -81,9 +81,6 @@
     <ClCompile Include="Engine\Graphics\VertexIndexArray.cpp">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Model.cpp">
-      <Filter>Source Files\Engine\Graphics</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Math\Transform.cpp">
       <Filter>Source Files\Engine\Math</Filter>
     </ClCompile>
@@ -104,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="Engine\Input\InputSystem.cpp">
       <Filter>Source Files\Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Objects\Model.cpp">
+      <Filter>Source Files\Engine\Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -158,9 +158,6 @@
     <ClInclude Include="Engine\Graphics\VertexIndexArray.h">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Model.h">
-      <Filter>Source Files\Engine\Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Math\Transform.h">
       <Filter>Source Files\Engine\Math</Filter>
     </ClInclude>
@@ -181,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="Engine\Input\InputSystem.h">
       <Filter>Source Files\Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Objects\Model.h">
+      <Filter>Source Files\Engine\Objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

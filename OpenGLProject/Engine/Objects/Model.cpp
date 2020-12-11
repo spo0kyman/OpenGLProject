@@ -85,4 +85,46 @@ namespace nc {
 		return true;
 	}
 
+	VertexArray Model::Load(const std::string& filename)
+	{
+		nc::VertexArray vertexArray;
+		vertexArray.Create("vertex");
+
+		std::vector<glm::vec3> positions;
+		std::vector<glm::vec3> normals;
+		std::vector<glm::vec2> texcoords;
+		nc::Model::Load(filename, positions, normals, texcoords);
+
+		if (!positions.empty()) {
+			vertexArray.CreateBuffer(positions.size() * sizeof(glm::vec3), positions.size(), positions.data());
+			vertexArray.SetAttribute(0, 3, 0, 0);
+		}
+		if (!normals.empty()) {
+			vertexArray.CreateBuffer(normals.size() * sizeof(glm::vec3), normals.size(), normals.data());
+			vertexArray.SetAttribute(1, 3, 0, 0);
+		}
+		if (!texcoords.empty()) {
+			vertexArray.CreateBuffer(texcoords.size() * sizeof(glm::vec2), texcoords.size(), texcoords.data());
+			vertexArray.SetAttribute(2, 2, 0, 0);
+		}
+
+		return vertexArray;
+	}
+
+	void Model::Draw()
+	{
+		m_program.Use();
+		m_material.SetProgram(m_program);
+
+		Camera* camera = m_scene->Get<Camera>("camera");
+		ASSERT(camera != nullptr);
+
+		glm::mat4 mvp = camera->projection() * camera->view() * (glm::mat4)m_transform;
+		m_program.SetUniform("mvp", mvp);
+		glm::mat4 model_view = camera->view() * (glm::mat4)m_transform; 
+		m_program.SetUniform("model_view", model_view);
+
+		m_vertexArray.Draw(GL_TRIANGLES);
+	}
+
 }

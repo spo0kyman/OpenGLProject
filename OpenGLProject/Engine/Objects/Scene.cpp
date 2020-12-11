@@ -13,6 +13,8 @@ namespace nc
 	
 	void Scene::Draw()
 	{
-
+		for (Object* object : m_objects) {
+			object->Draw();
+		}
 	}
 }
